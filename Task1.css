@@ -1,0 +1,78 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+    align-items: center;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url('wallpaper.webp') no-repeat center / cover;
+    background-attachment: fixed;
+}
+h1{
+    text-align: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    height: 580px;
+    padding: 20px 40px;
+    border: 2px solid #4a4a4a;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    color: #fff;
+    box-shadow: 0 2px 4px #35353572;
+}
+form:hover{
+    box-shadow: 0 5px 10px #35353572;
+}
+label{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+input, select{
+    width: 350px;
+    padding: 8px;
+    font-size: 16px;
+    margin-bottom: 12px;
+    border: 1px solid #6d6d6d;
+    border-radius: 6px;
+}
+select{
+    width: 366px;
+}
+span{
+    display: none;
+    position: absolute;
+    top: 238px;
+    left: 110px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ff0000;
+}
+.fullName input{
+    display: inline-block;
+    width: 165px;
+}
+.genderSelection input, .genderSelection label{
+    width: auto;
+    font-weight: 100;
+}
+#submitBtn{
+    display: block;
+    background: linear-gradient(to top right, rgb(6, 70, 173), rgba(0, 207, 244, 0.708));
+    padding: 10px 20px;
+    border-radius: 6px;
+    margin-top: 30px;
+    align-self: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+#submitBtn:hover{
+    background: linear-gradient(to top right, rgb(1, 41, 106), rgba(14, 113, 131, 0.708));
+}
