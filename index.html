@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Task 1: Data Entry Form</title>
+        <link rel="stylesheet" href="Task1.css">
+    </head>
+    <body>
+        <form id="form">
+            <!--Headline-->
+            <h1>Data Entry Form</h1>
+
+            <!---->
+            <label for="fullName">Full Name</label>
+            <div class="fullName">
+                <input type="text" name="firstName" placeholder="Enter First Name" required>
+                <input type="text" name="lastName" placeholder="Enter Last Name" required>
+            </div>
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Enter Email" id="email" required>
+            <label for="birthday">Birthday<span id="error">!</span></label>
+            <input type="date" id="birthday" onblur="checkBirthDay()" required>
+            <label for="phoneNumber">Phone Number</label>
+            <input type="tel" placeholder="Enter Phone Number" id="phoneNumber" required>
+
+            <!--Dropdown for country-->
+            <label for="countrySelector">Country</label>
+            <select name="country" id="countrySelector" required>
+                <option value="Afghanistan">Afghanistan</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Canada">Canada</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Egypt">Egypt</option>
+                <option value="Finland">Finland</option>
+                <option value="Germany">Germany</option>
+                <option value="Honduras">Honduras</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Japan">Japan</option>
+                <option value="Kazakhstan">Kazakhstan</option>
+                <option value="Laos">Laos</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="New Zealand">New Zealand</option>
+                <option value="Oman">Oman</option>
+                <option value="Philippines">Philippines</option>
+                <option value="Qatar">Qatar</option>
+                <option value="Russia">Russia</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Taiwan">Taiwan</option>
+                <option value="United States">United States</option>
+                <option value="Vatican City">Vatican City</option>
+                <option value="Yemen">Yemen</option>
+                <option value="Zimbabwe">Zimbabwe</option>
+            </select>
+
+            <!--Radio button for gender-->
+            <label for="gender">Gender</label>
+            <div class="genderSelection">
+                <input type="radio" id="male" value="Male" name="gender" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" value="Female" name="gender" required>
+                <label for="female">Female</label>
+            </div>
+
+            <!--Submit button-->
+            <input type="submit" value="Submit" id="submitBtn">
+        </form>
+        <script src="Task3.js"></script>
+    </body>
+</html>
