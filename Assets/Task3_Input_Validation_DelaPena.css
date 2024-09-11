@@ -1,0 +1,106 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+    align-items: center;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.3)), url('https://wallpapers.com/images/hd/gold-peak-mountain-4ffgm6rjhosk2ws7.jpg') no-repeat center / cover;
+    background-attachment: fixed;
+}
+h1{
+    text-align: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    height: 580px;
+    padding: 20px 40px;
+    border: 2px solid #4a4a4a;
+    border-radius: 30px;
+    backdrop-filter: blur(10px);
+    color: #fff;
+    box-shadow: 0 2px 4px #35353572;
+}
+form:hover{
+    box-shadow: 0 5px 10px #35353572;
+}
+label{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+input, select{
+    width: 363px;
+    padding: 8px;
+    font-size: 16px;
+    margin-bottom: 12px;
+    border: 1px solid #6d6d6d;
+    border-radius: 6px;
+}
+select{
+    width: 380px;
+}
+span{
+    display: none;
+    position: absolute;
+    font-size: 11.5px;
+    padding: 2px 6px;
+    color: #c71a1a;
+    background-color: #ffa200a3;
+    border-radius: 5px;
+}
+#errorMessage1{
+    top: 240px;
+    left: 110px;
+    animation: shakeMessage1 ease-in-out 0.5s;
+}
+@keyframes shakeMessage1{
+    0% {left: 114px;}
+    10% {left: 110px;}
+    30% {left: 114px;}
+    50% {left: 110px;}
+    70% {left: 114px;}
+    80% {left: 110px;}
+    100% {left: 114px;}
+}
+#errorMessage2{
+    top: 385px;
+    left: 160px;
+    animation: shakeMessage2 ease-in-out 0.5s;
+}
+@keyframes shakeMessage2{
+    0% {left: 164px;}
+    10% {left: 160px;}
+    30% {left: 164px;}
+    50% {left: 160px;}
+    70% {left: 164px;}
+    80% {left: 160px;}
+    100% {left: 164px;}
+}
+.fullName input{
+    display: inline-block;
+    width: 170px;
+}
+.genderSelection input, .genderSelection label{
+    width: auto;
+    font-weight: 100;
+}
+#submitBtn{
+    display: block;
+    background: linear-gradient(to top right, rgb(6, 70, 173), rgba(0, 207, 244, 0.708));
+    padding: 10px 20px;
+    border-radius: 6px;
+    margin-top: 30px;
+    align-self: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+}
+#submitBtn:hover{
+    background: linear-gradient(to top right, rgb(1, 41, 106), rgba(14, 113, 131, 0.708));
+}
